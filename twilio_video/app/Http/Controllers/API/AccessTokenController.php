@@ -14,6 +14,7 @@ class AccessTokenController extends Controller
     public function generate_token()
     {
         // Substitute your Twilio Account SID and API Key details
+        dd(env('TWILIO_ACCOUNT_SID'));
         $accountSid = env('TWILIO_ACCOUNT_SID');
         $apiKeySid = env('TWILIO_API_KEY_SID');
         $apiKeySecret = env('TWILIO_API_KEY_SECRET');

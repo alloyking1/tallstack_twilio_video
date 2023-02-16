@@ -7,6 +7,7 @@
         <title>Laravel</title>
 
         <!-- Fonts -->
+
         <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
 
         <!-- Styles -->
@@ -19,8 +20,12 @@
                 font-family: 'Nunito', sans-serif;
             }
         </style>
+        <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     </head>
     <body class="antialiased">
+
+        <livewire:twili-video-livewire />
+
         <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
             @if (Route::has('login'))
                 <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">

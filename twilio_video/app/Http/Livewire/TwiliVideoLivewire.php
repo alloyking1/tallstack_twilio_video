@@ -39,7 +39,7 @@ class TwiliVideoLivewire extends Component
         $grant = new VideoGrant();
         $grant->setRoom('cool room');
         $token->addGrant($grant);
-        return $this->token = $token;
+        return $this->token = $token->toJWT();
 
         // Serialize the token as a JWT
         // echo $token->toJWT();
